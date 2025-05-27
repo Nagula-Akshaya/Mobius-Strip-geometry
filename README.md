@@ -11,7 +11,7 @@ The entire logic is encapsulated in a `MobiusStrip` class for clarity and reusab
 - **`__init__`**: Initializes parameters like radius (`R`), strip width (`w`), and mesh resolution (`n`). It creates a 2D grid of parameters `u` and `v`.
 - **`_generate_mesh()`**: Uses parametric equations to generate 3D coordinates `(x, y, z)` for the Mobius surface.
 - **`surface_area()`**: Approximates the total surface area using vector calculus and numerical integration.
-- **`edge_length()`**: Computes the total length of the Möbius boundary.
+- **`edge_length()`**: Computes the total length of the Mobius boundary.
 - **`plot()`**: Visualizes the strip in 3D using `matplotlib`.
 
 ---
