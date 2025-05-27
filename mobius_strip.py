@@ -6,7 +6,7 @@ from mpl_toolkits.mplot3d import Axes3D
 
 class MobiusStrip:
     def __init__(self, R=1.0, w=0.3, n=200):
-        # Initialize Möbius strip parameters:
+        # Initialize Mobius strip parameters:
         # R: radius of the center circle
         # w: width of the strip
         # n: number of mesh points for each parameter (u and v)
@@ -21,7 +21,7 @@ class MobiusStrip:
         self._generate_mesh()
 
     def _generate_mesh(self):
-        # Parametric equations to generate Möbius strip surface points (x, y, z)
+        # Parametric equations to generate Mobius strip surface points (x, y, z)
         u, v = self.u, self.v
         self.x = (self.R + v * np.cos(u / 2)) * np.cos(u)
         self.y = (self.R + v * np.cos(u / 2)) * np.sin(u)
@@ -65,7 +65,7 @@ class MobiusStrip:
         total_length += euclidean((x_edge[-1], y_edge[-1], z_edge[-1]),
                                   (x_edge[0], y_edge[0], z_edge[0]))
 
-        # Multiply by 2 because the Möbius strip has only one edge that twists back
+        # Multiply by 2 because the Mobius strip has only one edge that twists back
         return total_length * 2
 
     def plot(self):
