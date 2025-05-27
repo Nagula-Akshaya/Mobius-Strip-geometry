@@ -1,6 +1,6 @@
 # Mobius Strip Surface Visualization & Analysis
 
-This Python project generates and visualizes a 3D Möbius strip using parametric equations, and numerically approximates its surface area and edge length.
+This Python project generates and visualizes a 3D Mobius strip using parametric equations, and numerically approximates its surface area and edge length.
 
 ---
 
