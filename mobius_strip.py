@@ -69,7 +69,7 @@ class MobiusStrip:
         return total_length * 2
 
     def plot(self):
-        # Create a 3D plot of the Möbius strip surface
+        # Create a 3D plot of the Mobius strip surface
         fig = plt.figure(figsize=(10, 6))
         ax = fig.add_subplot(111, projection='3d')
         ax.plot_surface(self.x, self.y, self.z, cmap='plasma', edgecolor='k', linewidth=0.1)
@@ -80,7 +80,7 @@ class MobiusStrip:
         plt.tight_layout()
         plt.show()
 
-# Run the script to calculate and visualize the Möbius strip
+# Run the script to calculate and visualize the Mobius strip
 if __name__ == "__main__":
     mobius = MobiusStrip(R=1.0, w=0.3, n=300)
     print(f"Surface Area ≈ {mobius.surface_area():.4f}")
